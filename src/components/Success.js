@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRoute } from "react-router-dom";
 import reactGA from "react-ga4";
 import { useEffect } from "react";
 
@@ -28,4 +28,4 @@ function Success(props) {
   );
 }
 
-export default Success;
+export default withRoute(Success);

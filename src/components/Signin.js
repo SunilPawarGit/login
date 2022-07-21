@@ -4,7 +4,7 @@ import api from "../api/users";
 import reactGA from "react-ga4";
 
 reactGA.initialize("G-R0371QD07B");
-export default function Signin(props) {
+const Signin = (props) => {
   const [users, setUsers] = useState(null);
   const [errors, setErrors] = useState({});
   const [isSubmit, setSubmit] = useState(false);
@@ -138,4 +138,5 @@ export default function Signin(props) {
       </div>
     </div>
   );
-}
+};
+export default withRoute(Signin);

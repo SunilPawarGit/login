@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, withRoute } from "react-router-dom";
 import api from "../api/users";
 import reactGA from "react-ga4";
 
@@ -237,4 +237,4 @@ function Signup(props) {
   );
 }
 
-export default Signup;
+export default withRoute(Signup);
