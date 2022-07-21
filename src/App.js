@@ -3,7 +3,7 @@ import Signup from "./components/Signup";
 import React, { useState } from "react";
 import Alert from "./components/Alert";
 import Signin from "./components/Signin";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, withRoute } from "react-router-dom";
 import Success from "./components/Success";
 import reactGA from "react-ga4";
 import { useEffect } from "react";
@@ -60,4 +60,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRoute(App);
