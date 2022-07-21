@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "1653575234778",
+      "email": "sunil14@gmail.com",
+      "password": "asdfgh",
+      "userType": "user"
+    },
+    {
+      "id": "1653629370280",
+      "email": "sunilpawar141096@gmail.com",
+      "password": "sunil@123",
+      "userType": "admin"
+    },
+    {
+      "id": "1653636769651",
+      "email": "user123@gmail.com",
+      "password": "user123",
+      "userType": "user"
+    },
+    {
+      "id": "1653657479491",
+      "email": "sunilpawar14109@gmail.com",
+      "password": "ssssss",
+      "userType": "admin"
+    },
+    {
+      "id": "1653919125906",
+      "email": "sunilpawar141096a@gmail.com",
+      "password": "hgfdsa",
+      "userType": "admin"
+    },
+    {
+      "id": "1654058842317",
+      "email": "user@1234.com",
+      "password": "user@123",
+      "userType": "admin"
+    }
+  ]
+}
