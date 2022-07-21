@@ -24,10 +24,7 @@ function App() {
     sessionStorage.setItem("userType", uType);
   };
   useEffect(() => {
-    reactGA.send({
-      hitType: "pageview",
-      path: window.location.pathname + window.location.search,
-    });
+    reactGA.pageview(window.location.pathname + window.location.search);
   });
   return (
     <>
