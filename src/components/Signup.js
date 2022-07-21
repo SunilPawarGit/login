@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import api from "../api/users";
+import reactGA from "react-ga4";
+
+reactGA.initialize("G-R0371QD07B");
 function Signup(props) {
   const [users, setUsers] = useState(null);
   const [userDetails, setUserDetails] = useState({
@@ -95,6 +98,8 @@ function Signup(props) {
     return response.data;
   };
   useEffect(() => {
+    reactGA.pageview(window.location.pathname + window.location.search);
+
     const getAllUsers = async () => {
       const allUsers = await retriveUsers();
       if (allUsers) setUsers(allUsers);

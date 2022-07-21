@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import reactGA from "react-ga4";
+import { useEffect } from "react";
+
+reactGA.initialize("G-R0371QD07B");
 function Success(props) {
   function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
+  useEffect(() => {
+    reactGA.pageview(window.location.pathname + window.location.search);
+  });
   return (
     <div className="text-center">
       <h1>

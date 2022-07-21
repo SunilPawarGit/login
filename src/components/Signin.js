@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../api/users";
+import reactGA from "react-ga4";
+
+reactGA.initialize("G-R0371QD07B");
 export default function Signin(props) {
   const [users, setUsers] = useState(null);
   const [errors, setErrors] = useState({});
@@ -23,6 +26,7 @@ export default function Signin(props) {
     return response.data;
   };
   useEffect(() => {
+    reactGA.pageview(window.location.pathname + window.location.search);
     const getAllUsers = async () => {
       const allUsers = await retriveUsers();
       if (allUsers) setUsers(allUsers);
