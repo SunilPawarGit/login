@@ -35,6 +35,12 @@
       "email": "user@1234.com",
       "password": "user@123",
       "userType": "admin"
+    },
+    {
+      "id": "1658397428610",
+      "email": "sunilpawar14109614@gmail.com",
+      "password": "sunil",
+      "userType": "admin"
     }
   ]
 }
